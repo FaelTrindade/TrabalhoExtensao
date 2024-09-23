@@ -1,0 +1,77 @@
+.section{
+background-color: white;
+display: flex;
+flex-direction: column;
+padding-top: 5rem;
+}
+
+.section__div-about{
+    flex: 1;
+    padding-inline: 1rem;
+    margin-bottom: 3rem;
+}
+
+.about__title{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.section__div-about p{
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+}
+
+/*service*/
+
+.section__div-service{
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+}
+
+.card{
+    border: solid #555;
+    padding: 1.5rem;
+    border-radius: 10px;
+}
+
+.black{
+    background-color: #333;
+    color: white;
+}
+.gray{
+    background-color:whitesmoke;
+}
+.card > i{
+    font-size: 3rem;
+    color: #888;
+}
+
+.card> h3{
+    margin-block: 1rem;
+    font-weight: bold;
+}
+
+.card>p{
+    font-weight: 700;
+    max-width: 30ch;
+}
+
+@media(width < 1000px){
+
+    .section__div-service{
+
+        justify-content: space-between;
+        gap: 1rem;
+        padding-inline: 1rem;
+    }
+
+}
+
+@media (width<600px) {
+    
+    .section__div-service{
+        flex-direction: column;
+    }
+}

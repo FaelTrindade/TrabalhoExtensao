@@ -1,0 +1,89 @@
+.header{
+height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap:1rem;
+    color: white;
+}
+
+.header__h1{
+    padding-top: 12rem;
+    font-size: 5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 5rem;
+}
+
+.navbar{
+  width: 100%;
+  padding-bottom: 3rem;
+}
+
+.navbar__ul{
+    background-color: white;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+   
+}
+
+.navbar__ul-li{
+    font-size: 1rem;
+    color: black;
+    height: 100%;
+    padding-block: 0.8rem;
+}
+
+.navbar__ul-li a{
+    position: relative;
+    text-decoration: none;
+    color: black;
+}
+.navbar__ul-li a:hover{
+    transition: ease 0.8s;
+    font-weight: bold;
+}
+
+.navbar__ul-li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px; /* Ajuste esta propriedade para controlar a posição da linha */
+    width: 100%;
+    height: 2px; /* Espessura da linha */
+    background-color: #888; /* Cor da linha */
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.5s ease;
+}
+
+.navbar__ul-li a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+
+}
+
+
+@media (width < 1000px) {
+
+    .header{
+        justify-content: center;
+        height: 50%;
+    }
+    .header__h1{
+        text-align: center;
+    }
+
+    .navbar{
+        display: none;
+    }
+}
+
+@media (width<600px) {
+
+       .header__h1{
+        font-size: 3rem;
+    }
+}

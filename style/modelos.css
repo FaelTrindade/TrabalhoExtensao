@@ -1,0 +1,109 @@
+
+.implantação{
+    padding-bottom: 5rem;
+    padding-inline: 1rem;
+}
+
+.implantação > h2{
+    margin-bottom: 0.8rem;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.content__p{
+    font-size: 1.2rem;
+}
+.content__p > span{
+padding-right: 0.5rem;
+    font-weight: bold;
+
+}
+
+/*Vantagem e desvantagem*/
+
+.VantDesvan{
+display: flex;
+padding-inline: 1rem;
+gap: 1rem;
+}
+
+
+.VantDesvan__title{
+font-size: 2rem;
+    font-weight: bold;
+    display: none;
+}
+
+.Vant{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+   
+    background-color: #333;
+padding-inline: 0.3rem;
+    color: white;
+}
+
+
+.Vant__h3{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.Vant__p{
+   display: flex;
+   flex-direction: column;
+   gap: 0.5rem;
+   font-size: 1.1rem;
+   
+}
+
+.Vant__p span{
+    font-weight: bold;
+}
+
+
+.Desvan{
+    flex: 1;
+display: flex;
+flex-direction: column;
+gap: 1rem;
+    background-color: whitesmoke;
+    padding-inline: 0.3rem;
+}
+
+.Desvan__h3{
+font-size: 2rem;
+font-weight: bold;
+}
+
+.Desvan__p{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-size: 1.1rem;
+}
+.Desvan__p span{
+    font-weight: bold;
+}
+
+
+@media (width<600px) {
+    .VantDesvan{
+        flex-direction: column;
+    }
+    .VantDesvan__title{
+        font-size: 1.8rem;
+    
+display: block;
+    }
+
+    .Vant__h3,.Desvan__h3{
+        font-size: 1.6rem;
+    }
+}
